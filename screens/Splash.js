@@ -12,7 +12,7 @@ export default class Splash extends Component {
   static navigationOptions = {
     title: 'Splash Screen',
     headerStyle: {
-      backgroundColor: '#f4511e',
+      backgroundColor: '#2DB744',
     },
     headerTintColor: '#fff',
     headerTitleStyle: {
@@ -37,7 +37,8 @@ componentWillUnmount(){
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <Text>Enter your height in meters: </Text>
+          <Text style={styles.textStyle}>
+            HealthFirst</Text>
         </View>
       </View>
     );
@@ -52,7 +53,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   header: {
-    backgroundColor: 'pink',
+    backgroundColor: '#fff',
     padding: 50,
   },
+  textStyle: {
+    fontSize: 60,
+    color: '#2DB744'
+  }
 });
