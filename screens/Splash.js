@@ -1,3 +1,4 @@
+import Svg, {Circle, Rect, Line} from 'react-native-svg';
 import React from 'react';
 import {Component} from 'react';
 import {StyleSheet, Text, View, Button} from 'react-native';
@@ -20,26 +21,42 @@ export default class Splash extends Component {
     },
   };
 
-  componentDidMount(){
-    // Start counting when the page is loaded
-    this.timeoutHandle = setTimeout(()=>{
-         // Add your logic for the transition
-        this.props.navigation = 'Login'
-    }, 3000);
-}
-
-componentWillUnmount(){
-  clearTimeout(this.timeoutHandle); 
-}
-
   render() {
-    {this.componentDidMount()}
+    const {navigate} = this.props.navigation;
+    setTimeout(()=>{
+        // Add your logic for the transition
+       navigate('Login')
+   }, 3000);
     return (
-      <View style={styles.container}>
+      <View>
+        <Svg width="414" height="263">
+            <Rect
+                x="0"
+                y="1"
+                width="414"
+                height="263"
+                fill="#A5D6A9"
+                strokeHeight="1"
+                strokeWidth="1"
+                stroke="rgb(0,0,0)"
+            />
+        </Svg>
         <View style={styles.header}>
           <Text style={styles.textStyle}>
             HealthFirst</Text>
         </View>
+        <Svg width="414" height="263">
+            <Rect
+                x="0"
+                y="-1"
+                width="414"
+                height="263"
+                fill="#A5D6A9"
+                strokeHeight="1"
+                strokeWidth="1"
+                stroke="rgb(0,0,0)"
+            />
+        </Svg>
       </View>
     );
   }
@@ -54,6 +71,9 @@ const styles = StyleSheet.create({
   },
   header: {
     backgroundColor: '#fff',
+    alignItems: 'center',
+    height: 263,
+    justifyContent: 'center',
     padding: 50,
   },
   textStyle: {
