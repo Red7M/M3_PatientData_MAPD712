@@ -6,7 +6,7 @@ export default class Home extends Component {
   static navigationOptions = {
     title: 'Home Screen',
     headerStyle: {
-      backgroundColor: '#f4511e',
+      backgroundColor: '#2DB744',
     },
     headerTintColor: '#fff',
     headerTitleStyle: {

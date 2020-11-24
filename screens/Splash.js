@@ -1,4 +1,4 @@
-import Svg, {Circle, Rect, Line} from 'react-native-svg';
+import Svg, {Rect} from 'react-native-svg';
 import React from 'react';
 import {Component} from 'react';
 import {StyleSheet, Text, View, Button} from 'react-native';

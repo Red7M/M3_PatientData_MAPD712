@@ -6,7 +6,7 @@ export default class PatientProfile extends Component {
   static navigationOptions = {
     title: 'Patient Profile Screen',
     headerStyle: {
-      backgroundColor: '#f4511e',
+      backgroundColor: '#2DB744',
     },
     headerTintColor: '#fff',
     headerTitleStyle: {
